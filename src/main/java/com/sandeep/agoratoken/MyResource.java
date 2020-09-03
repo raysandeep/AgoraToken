@@ -43,9 +43,10 @@ public class MyResource extends Exception {
 
         String result = token.buildTokenWithUid(resource.appId, resource.appCertificate,
                 channelName, uid, role, timestamp);
-        JSONObject json = new JSONObject();
-        json.put("message",result);
-        return json;
+        System.out.print(result);
+        JSONObject jsondict = new JSONObject();
+        jsondict.put("message",result);
+        return jsondict;
     }
 
 }

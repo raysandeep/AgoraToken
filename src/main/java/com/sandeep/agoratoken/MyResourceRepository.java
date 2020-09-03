@@ -1,8 +1,8 @@
 package com.sandeep.agoratoken;
 
 public class MyResourceRepository {
-    static String appId = "APP_ID";
-    static String appCertificate = "APP_CERT";
+    static String appId = "3f3280678a214a30b86b5cde6c27e5c6";
+    static String appCertificate = "ebf1d64e51694dca8a31056c08333e7d";
     private String channelName;
     private int uid = 0;
     private int expirationTimeInSeconds = 3600;
