@@ -3,8 +3,8 @@ package com.sandeep.agoratoken;
 public class AgoraRTMRepository {
     static String appId = "APP_ID";
     static String appCertificate = "APP_CERT";
-    private static String userId;
-    private static int expireTimestamp = 0;
+    private String userId;
+    private int expireTimestamp = 0;
 
     public static String getAppId() {
         return appId;
@@ -18,20 +18,12 @@ public class AgoraRTMRepository {
         AgoraRTMRepository.appCertificate = appCertificate;
     }
 
-    public static String getUserId() {
+    public String getUserId() {
         return userId;
     }
-
-    public static void setUserId(String userId) {
-        AgoraRTMRepository.userId = userId;
-    }
-
-    public static int getExpireTimestamp() {
+    
+    public int getExpireTimestamp() {
         return expireTimestamp;
-    }
-
-    public static void setExpireTimestamp(int expireTimestamp) {
-        AgoraRTMRepository.expireTimestamp = expireTimestamp;
     }
 
     public static void setAppId(String appId) {
