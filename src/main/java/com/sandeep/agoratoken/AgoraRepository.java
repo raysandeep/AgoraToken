@@ -1,6 +1,6 @@
 package com.sandeep.agoratoken;
 
-class AgoraRepository {
+public class AgoraRepository {
     static String appId = "APP_ID";
     static String appCertificate = "APP_CERT";
     private String channelName;
